@@ -38,6 +38,6 @@ public class Payment extends PaymentFactory{
 
     @Override
     public Payment createPayment(Id aggregateId, ClientData clientData, Money amount) {
-        return new Payment(this.aggregateId, this.clientData, this.amount);
+        return new Payment(aggregateId, clientData, amount);
     }
 }
